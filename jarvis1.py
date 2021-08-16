@@ -23,7 +23,7 @@ import roman
 from PIL import Image
 
 
-app_id = 'JW6Y7Q-GKWVR76AJG'
+app_id = 'Wolframalpha-key'
 
 engine = pyttsx3.init('sapi5')
 voices = engine.getProperty('voices')
@@ -180,7 +180,7 @@ def play():
             speak("It's hard to understand")
 
         elif "what is" in query:
-            client = wolframalpha.Client("JW6Y7Q-GKWVR76AJG")
+            client = wolframalpha.Client("Wolframalpha-key")
             res = client.query(query)
             try:
                 print(next(res.results).text)
